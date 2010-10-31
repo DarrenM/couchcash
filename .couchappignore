@@ -1,4 +1,5 @@
  [   
    "~",
-   "scripts/"
+   "scripts/*",
+   "lore/*"
 ]
