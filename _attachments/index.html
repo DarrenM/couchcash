@@ -6,28 +6,28 @@
   </head>
   <body>
     <div id="header">
-      
       <div id="account"></div>
-
-      <h1>
-	<a href="index.html">CouchCash</a>
-      </h1>
-
+      <h1><a href="index.html">CouchCash</a></h1>
     </div>
 
-    <div id="profile"></div>
-    <div id="action-area">
-      action area
+    <div id="main-area">
+      <div id="profile" class="cc-widget">profile</div>
+      
+      <form name="search" id="search-form" class="cc-widget" action="search">
+	<label>Search:</label><input id="search-input"></input>
+      </form>
+      
+      <div id="search-results" class="cc-widget">search results</div>
+      <div id="items" class="cc-widget">
+	<p>Items</p>
+      </div>
     </div>
 
-    <div id="sidebar">
+    <div id="sidebar" class="cc-widget">
       <p>Edit welcome message.</p>
-      <p>Ideas: You could easily turn this into a photo sharing app, or a grocery list, or a chat room.</p>
+      <p>Ideas: You could easily turn this into a photo sharing app, or a grocery list</p>
     </div>
     
-    <div id="items">
-      <p>Items</p>
-    </div>
   </body>
   <script src="vendor/couchapp/loader.js"></script>
   <script type="text/javascript" charset="utf-8">
