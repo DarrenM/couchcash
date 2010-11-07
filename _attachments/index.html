@@ -12,11 +12,7 @@
 
     <div id="main-area">
       <div id="profile" class="cc-widget">profile</div>
-      
-      <form name="search" id="search-form" class="cc-widget" action="search">
-	<label>Search:</label><input id="search-input"></input>
-      </form>
-      
+      <div id="transaction" class="cc-widget"></div>
       <div id="search-results" class="cc-widget">search results</div>
       <div id="items" class="cc-widget">
 	<p>Items</p>
@@ -34,6 +30,7 @@
     $.couch.app(function(app) {
       $("#account").evently("account", app);
       $("#profile").evently("profile", app);
+      $("#transaction").evently("transaction_form", app);
       $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
       $("#items").evently("items", app);
     });
