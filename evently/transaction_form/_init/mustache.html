@@ -13,13 +13,28 @@
 
   <fieldset id="debit" style="border: 1px solid black">
     <legend>Debit</legend>
-    <label for="trans-dr-type">Debit Type</label><input name="dr-type"></input>
+    <label for="trans-dr-type">Debit Type</label>
+    <select name="dr-type">
+      <option>Expense</option>
+      <option>Asset</option>
+      <option>Income</option>
+      <option>Liability</option>
+      <option>Equity</option>
+    </select>
     <br />
     <label for="trans-dr-tags">Debit Tags</label><input name="dr-tags"></input>
   </fieldset>
 
   <fieldset id="credit">
-    <label for="trans-cr-type">Credit Type</label><input name="cr-type"></input>
+    <legend>Credit</legend>
+    <label for="trans-cr-type">Credit Type</label>
+    <select name="cr-type">
+      <option>Asset</option>
+      <option>Income</option>
+      <option>Liability</option>
+      <option>Expense</option>
+      <option>Equity</option>
+    </select>
     <br />
     <label for="trans-cr-tags">Credit Tags</label><input name="cr-tags"></input>
   </fieldset>
