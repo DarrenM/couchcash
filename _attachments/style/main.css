@@ -62,7 +62,7 @@ fieldset {
     border: 0;
 }
 
-label {
+#transaction label {
     display: block;
     float: left;
     margin-right: 3px;
@@ -70,7 +70,7 @@ label {
     width: auto;
 }
 
-input {
+#transaction input {
     width: 130px;
 }
 
