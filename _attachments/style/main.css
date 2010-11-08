@@ -36,8 +36,8 @@ h1 a:hover {
 
 .cc-widget {
     border: 3px solid #a9a9a9;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
     background: #ffffff;
     padding: 8px;
     margin-bottom: 5px;
@@ -45,11 +45,35 @@ h1 a:hover {
 
 #main-area {
     float: left;
-    width: 66%;
+    width: 65%;
+    margin-left: 4px;
 }
 
 #sidebar {
     float: right;
-    width: 31%;
+    width: 30%;
+    margin-right: 4px;
 }
 
+fieldset {
+    float: left;
+    width: auto;
+    padding: 0;
+    border: 0;
+}
+
+label {
+    display: block;
+    float: left;
+    margin-right: 3px;
+    text-align: right;
+    width: auto;
+}
+
+input {
+    width: 130px;
+}
+
+#submit-transaction {
+    margin-right: 220px;
+}

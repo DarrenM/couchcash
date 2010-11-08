@@ -1,19 +1,30 @@
 <form name="transaction" id="trans-form" action="search">
-  <label for="trans-desc">Description:</label><input name="trans-desc"/>
-  <br />
-  <label for="trans-qty">Quantity:</label><input name="trans-qty"></input>
-  <br />
-  <label for="trans-currency">Currency:</label><input name="trans-currency"></input>
-  <br />
-  <label for="trans-time">Time of transaction:</label><input name="trans-time"></input>
-  <br />
-  <label for="trans-dr-type">Debit Type</label><input name="trans-dr-type"></input>
-  <br />
-  <label for="trans-dr-tags">Debit Tags</label><input name="trans-dr-tags"></input>
-  <br />
-  <label for="trans-cr-type">Credit Type</label><input name="trans-cr-type"></input>
-  <br />
-  <label for="trans-cr-tags">Credit Tags</label><input name="trans-cr-tags"></input>
-  <br />
+  <fieldset id="desc">
+    <label for="trans-desc">Description:</label><input name="trans-desc"/>
+  </fieldset>
+  
+  <fieldset id="qty">
+    <label for="trans-qty">Quantity:</label><input name="trans-qty"></input>
+  </fieldset>
+     
+  <fieldset id="currency">
+    <label for="trans-currency">Currency:</label><input name="trans-currency"></input>
+  </fieldset>
+  
+  <fieldset id="debit">
+    <label for="trans-dr-type">Debit Type</label><input name="trans-dr-type"></input>
+    <br />
+    <label for="trans-dr-tags">Debit Tags</label><input name="trans-dr-tags"></input>
+  </fieldset>
+  
+  <fieldset id="credit">
+    <label for="trans-cr-type">Credit Type</label><input name="trans-cr-type"></input>
+    <br />
+    <label for="trans-cr-tags">Credit Tags</label><input name="trans-cr-tags"></input>
+  </fieldset>
+
+  <fieldset id="trans-time">
+    <label for="trans-time">Time of transaction:</label><input name="trans-time"></input>
+  </fieldset>
   <button type="default" id="submit-transaction">Submit</button>
 </form>
