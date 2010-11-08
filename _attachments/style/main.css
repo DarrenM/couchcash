@@ -43,6 +43,10 @@ h1 a:hover {
     margin-bottom: 5px;
 }
 
+.clear {
+    clear: both;
+}
+
 #main-area {
     float: left;
     width: 65%;
