@@ -55,7 +55,7 @@ h1 a:hover {
     margin-right: 4px;
 }
 
-fieldset {
+#transaction fieldset {
     float: left;
     width: auto;
     padding: 0;
