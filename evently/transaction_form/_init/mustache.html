@@ -1,19 +1,22 @@
 <form name="transaction" id="trans-form" action="search">
   <fieldset id="desc">
-    <label for="trans-desc">Description:</label><input name="desc"/>
+    <legend>Description</legend>
+    <input name="desc"/>
   </fieldset>
 
   <fieldset id="qty">
-    <label for="trans-qty">Quantity:</label><input name="qty"></input>
+    <legend>Quantity</legend>
+    <input name="qty"></input>
   </fieldset>
 
   <fieldset id="currency">
-    <label for="trans-currency">Currency:</label><input name="currency"></input>
+    <legend>Currency</legend>
+    <input name="currency"></input>
   </fieldset>
 
-  <fieldset id="debit" style="border: 1px solid black">
+  <fieldset id="debit">
     <legend>Debit</legend>
-    <label for="trans-dr-type">Debit Type</label>
+    <label for="trans-dr-type">Type</label>
     <select name="dr-type">
       <option>Expense</option>
       <option>Asset</option>
@@ -22,12 +25,12 @@
       <option>Equity</option>
     </select>
     <br />
-    <label for="trans-dr-tags">Debit Tags</label><input name="dr-tags"></input>
+    <label for="trans-dr-tags">Tags</label><input name="dr-tags"></input>
   </fieldset>
 
   <fieldset id="credit">
     <legend>Credit</legend>
-    <label for="trans-cr-type">Credit Type</label>
+    <label for="trans-cr-type">Type</label>
     <select name="cr-type">
       <option>Asset</option>
       <option>Income</option>
@@ -36,11 +39,12 @@
       <option>Equity</option>
     </select>
     <br />
-    <label for="trans-cr-tags">Credit Tags</label><input name="cr-tags"></input>
+    <label for="trans-cr-tags">Tags</label><input name="cr-tags"></input>
   </fieldset>
 
   <fieldset id="trans-time">
-    <label for="trans-time">Time of transaction:</label><input name="trans-time"></input>
+    <legend>Time of transaction</legend>
+    <input name="trans-time"></input>
   </fieldset>
   <button type="default" id="submit-transaction">Submit</button>
   <div class="clear"></div>

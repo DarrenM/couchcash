@@ -59,11 +59,21 @@ h1 a:hover {
     margin-right: 4px;
 }
 
+input {
+    border: 1px solid #404040;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
 #transaction fieldset {
+    background-color: #f7f7f7;
     float: left;
     width: auto;
-    padding: 0;
-    border: 0;
+    padding: 6px;
+    border: 1px solid;
+    margin:0 5px 15px 5px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
 }
 
 #transaction label {
@@ -74,10 +84,18 @@ h1 a:hover {
     width: auto;
 }
 
-#transaction input {
-    width: 130px;
+#desc input {
+    width: 350px;
+}
+
+#qty input {
+    width: 110px;
+}
+
+#currency input {
+    width: 60px;
 }
 
 #submit-transaction {
-    margin-right: 220px;
+    margin-right: 3000px;
 }
