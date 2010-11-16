@@ -44,8 +44,19 @@
 
   <fieldset id="trans-time">
     <legend>Time of transaction</legend>
-    <input name="trans-time"></input>
+    <input name="trans-time" class="buh"></input>
   </fieldset>
   <button type="default" id="submit-transaction">Submit</button>
   <div class="clear"></div>
 </form>
+
+
+<script>
+    $(function() {
+	$('select').selectmenu({
+	    style: 'dropdown',
+	    width: 90
+	});
+	$('#submit-transaction').button();
+    });
+</script>
