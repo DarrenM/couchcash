@@ -1,7 +1,7 @@
 /* add styles here */
 
 body {
-  font: 1em Helvetica, sans-serif;
+  font: 12px Helvetica, sans-serif;
   background: #f5f5f5;
   padding: 0;
   margin: 0;
@@ -66,12 +66,12 @@ input {
 }
 
 #transaction fieldset {
-    background-color: #f7f7f7;
+    background-color: #fafafa;
     float: left;
     width: auto;
     padding: 6px;
     border: 1px solid;
-    margin:0 5px 15px 5px;
+    margin:0 6px 8px 6px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
 }
@@ -85,14 +85,17 @@ input {
 }
 
 #desc input {
-    width: 350px;
+    width: 360px;
 }
 
 #qty input {
-    width: 110px;
+    width: 120px;
 }
 
 #currency input {
     width: 60px;
+}
+#trans-time input {
+    width: 130px
 }
 
