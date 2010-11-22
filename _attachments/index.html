@@ -8,6 +8,7 @@
     <script src="vendor/couchapp/loader.js"></script>
     <script src="script/jquery-ui.custom.min.js" type="text/javascript"></script>
     <script src="script/ui.selectmenu.js" type="text/javascript"></script>
+    <script src="script/couchcash.js" type="text/javascript"></script>
   </head>
   <body>
     <div id="header" class="ui-widget-header">
@@ -16,16 +17,17 @@
     </div>
 
     <div id="main-area">
-      <div id="transaction" class="cc-widget"></div>
-      <div id="search-results" class="cc-widget">search results</div>
-      <div id="items" class="cc-widget">
+      <div id="transaction" class="cc-widget ui-widget-content"></div>
+      <div id="search-results" class="cc-widget ui-widget-content">search results</div>
+      <div id="items" class="cc-widget ui-widget-content">
 	<p>Items</p>
       </div>
     </div>
 
-    <div id="sidebar" class="cc-widget">
-      <p>Edit welcome message.</p>
-      <p>Ideas: You could easily turn this into a photo sharing app, or a grocery list</p>
+    <div id="sidebar" class=" cc-widget ui-widget-content">
+      <div class="cc-widget ui-widget-header">Controls</div>
+      <button type="default">New Account</button>
+      <div class="cc-widget ui-widget-header">Accounts</div>
     </div>
   </body>
   <script type="text/javascript" charset="utf-8">
