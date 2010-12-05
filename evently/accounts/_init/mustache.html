@@ -1,10 +1,13 @@
-<ul>
+<ul id="accounts-ul">
   {{#accounts}}
-  <li class="{{type}} ui-widget-content cc-widget">
+  <h3 class="{{type}}">
+    <a href="#">{{name}} - <span>0.00<span></a>
+  </h3>
+  <div>
     {{name}}
     <a href="#" class="ui-icon ui-icon-pencil"></a>
     <a href="#" class="ui-icon ui-icon-trash"></a>
-  </li>
+  </div>
   {{/accounts}}
 </ul>
 

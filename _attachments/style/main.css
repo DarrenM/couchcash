@@ -104,25 +104,25 @@ input {
     padding: 5px;
     margin: 0;
 }
-#accounts ul li.equity {
+#accounts ul h3.equity {
     background: #FFFF99;
 }
-#accounts ul li.asset {
+#accounts ul h3.asset {
     background: #99FFFF;
 }
-#accounts ul li.liability {
+#accounts ul h3.liability {
     background: #FF9999;
 }
-#accounts ul li.income {
+#accounts ul h3.income {
     background: #99FF99;
 }
-#accounts ul li.expense {
+#accounts ul h3.expense {
     background: #FF99FF;
 }
-#accounts ul li a.ui-icon {
+#accounts ul div a.ui-icon {
    float:right;
    display: none;
 }
-#accounts ul li:hover a.ui-icon {
+#accounts ul div:hover a.ui-icon {
    display: block;
 }
