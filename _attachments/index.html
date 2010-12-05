@@ -27,16 +27,33 @@
     <div id="sidebar" class=" cc-widget ui-widget-content">
       <div class="cc-widget ui-widget-header">Controls</div>
       <button type="default">New Account</button>
-      <div class="cc-widget ui-widget-header">Accounts</div>
+      <div id="account-dialog" class="hidden">
+	<form name="account" id="account-form">
+	  <p><label for="name">Name:</label><input name="name"></input></p>
+	  <p>
+	    <label for="type">Type:</label>
+	    <select name="type">
+	      <option>asset</option>
+	      <option>liability</option>
+	      <option>income</option>
+	      <option>expense</option>
+	      <option>equity</option>
+	    </select>
+	  </p>
+	</form>
+      </div>
+      <div class="cc-widget ui-widget-header" style="margin-top: 33px">Accounts</div>
+      <div id="accounts" class="cc-widget ui-widget-content"></div>
     </div>
   </body>
   <script type="text/javascript" charset="utf-8">
     $.couch.app(function(app) {
-      $("#account").evently("account", app);
-      $("#profile").evently("profile", app);
-      $("#transaction").evently("transaction_form", app);
-      $.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
-      $("#items").evently("items", app); 
+	$("#account").evently("account", app);
+	$("#profile").evently("profile", app);
+	$("#transaction").evently("transaction_form", app);
+	$('#accounts').evently('accounts', app);
+	$.evently.connect("#account","#profile", ["loggedIn","loggedOut"]);
+	$("#items").evently("items", app); 
     });
   </script>
 </html>

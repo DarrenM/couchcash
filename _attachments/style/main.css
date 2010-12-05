@@ -36,8 +36,12 @@ h1 a:hover {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     background: #ffffff;
-    padding: 8px;
+    padding: 5px;
     margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
 }
 
 .clear {
@@ -95,4 +99,30 @@ input {
 #trans-time input {
     width: 130px
 }
-
+#accounts ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}
+#accounts ul li.equity {
+    background: #FFFF99;
+}
+#accounts ul li.asset {
+    background: #99FFFF;
+}
+#accounts ul li.liability {
+    background: #FF9999;
+}
+#accounts ul li.income {
+    background: #99FF99;
+}
+#accounts ul li.expense {
+    background: #FF99FF;
+}
+#accounts ul li a.ui-icon {
+   float:right;
+   display: none;
+}
+#accounts ul li:hover a.ui-icon {
+   display: block;
+}

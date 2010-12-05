@@ -7,5 +7,5 @@ function(data) {
       p.message = r.value && r.value.message;
       return p;
     })
-  }
+  };
 };
