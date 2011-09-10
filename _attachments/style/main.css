@@ -9,8 +9,6 @@ body {
 
 
 #header {
-    background:-moz-linear-gradient(top, #1c86ee, #87ceff);
-    background:-webkit-gradient(linear, left top, left bottom, from(#1c86ee), to(#87ceff));
     margin-bottom: 12px;
 }
 
@@ -22,7 +20,7 @@ h1 {
 h1 a {
     color:#000000;
     text-decoration:none;
-    text-shadow:#1874cd 1px 1px 1px;
+    text-shadow:#ffffff 1px 1px 1px;
 }
 
 h1 a:hover {
@@ -35,12 +33,15 @@ h1 a:hover {
 }
 
 .cc-widget {
-    border: 3px solid #a9a9a9;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     background: #ffffff;
-    padding: 8px;
+    padding: 5px;
     margin-bottom: 5px;
+}
+
+.hidden {
+    display: none;
 }
 
 .clear {
@@ -95,11 +96,33 @@ input {
 #currency input {
     width: 60px;
 }
-
 #trans-time input {
     width: 130px
 }
-
-#submit-transaction {
-    margin-left: 80px;
+#accounts ul {
+    list-style-type: none;
+    padding: 5px;
+    margin: 0;
+}
+#accounts ul h3.equity {
+    background: #FFFF99;
+}
+#accounts ul h3.asset {
+    background: #99FFFF;
+}
+#accounts ul h3.liability {
+    background: #FF9999;
+}
+#accounts ul h3.income {
+    background: #99FF99;
+}
+#accounts ul h3.expense {
+    background: #FF99FF;
+}
+#accounts ul div a.ui-icon {
+   float:right;
+   display: none;
+}
+#accounts ul div:hover a.ui-icon {
+   display: block;
 }
